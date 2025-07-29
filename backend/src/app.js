@@ -12,10 +12,12 @@ app.use(express.json());
 const authRoutes = require('./routes/auth');
 const articlesRoutes = require('./routes/articles');
 const categoriesRoutes = require('./routes/categories');
+const commentairesRoutes = require('./routes/commentaires');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/articles', articlesRoutes);
 app.use('/api/categories', categoriesRoutes);
+app.use('/api/commentaires', commentairesRoutes);
 
 // Route de test
 app.get('/', (req, res) => {
